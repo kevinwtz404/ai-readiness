@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "readiness-assessment",
+  "type": "object",
+  "required": ["organisation", "domains"],
+  "properties": {
+    "organisation": { "type": "string" },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "score"],
+        "properties": {
+          "name": { "type": "string" },
+          "score": { "type": "number", "minimum": 0, "maximum": 100 },
+          "evidence": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

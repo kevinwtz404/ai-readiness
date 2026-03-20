@@ -1,0 +1,7 @@
+{
+  "organisation": "example-co",
+  "domains": [
+    { "name": "governance", "score": 62, "evidence": ["policy draft", "owner assigned"] },
+    { "name": "workflow fit", "score": 74, "evidence": ["pilot defined", "kpis set"] }
+  ]
+}
